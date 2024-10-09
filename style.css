@@ -1,0 +1,302 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 30px;
+}
+header nav ul {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+header nav li {
+  list-style: none;
+}
+header nav a {
+  text-decoration: none;
+  color: black;
+}
+
+.second {
+  display: flex;
+  justify-content: baseline;
+  width: 100%;
+  height: 500px;
+  background: url(/photo-collage.png.png) no-repeat center center/cover;
+}
+.second .headimg {
+  color: white;
+  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+  font-size: 50px;
+  margin-top: 200px;
+}
+.second a {
+  color: white;
+  margin-left: 40px;
+}
+
+.third {
+  height: 98vh;
+  display: flex;
+}
+.third .card {
+  display: flex;
+  margin-left: 300px;
+  gap: 50px;
+}
+.third .card .card1 {
+  margin-top: 35px;
+}
+.third .card .card1:hover {
+  transform: scale(1.1, 1.1);
+}
+.third .card .card1 img {
+  height: 320px;
+}
+.third .card .card1 h4 {
+  margin-top: 5px;
+  margin-left: 20px;
+}
+.third .card .card2 {
+  margin-top: 35px;
+}
+.third .card .card2:hover {
+  transform: scale(1.1, 1.1);
+}
+.third .card .card2 img {
+  height: 320px;
+}
+.third .card .card2 h4 {
+  margin-top: 0px;
+  margin-left: 20px;
+}
+.third h1 {
+  position: relative;
+  left: 40px;
+  top: 40px;
+  font-size: 30px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-weight: 300;
+}
+.third a {
+  position: relative;
+  left: 40px;
+  top: 50px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+.fourth {
+  background-color: #F4EBD0;
+}
+.fourth .fourth1 {
+  display: flex;
+}
+.fourth .fourth1 img {
+  height: 700px;
+  width: 700px;
+}
+.fourth .fourth1 .left4 {
+  position: sticky;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: 80px;
+  gap: 50px;
+}
+.fourth .fourth1 h1 {
+  font-size: 60px;
+}
+.fourth .fourth1 p {
+  font-size: 30px;
+}
+.fourth .fourth1 a {
+  font-size: 20px;
+}
+
+.sixth {
+  height: 90vh;
+  background: url(/glasses\ image\ -\ juno\ collection.webp) no-repeat center center/cover;
+}
+.sixth .sixth1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: aliceblue;
+  gap: 20px;
+  padding-top: 130px;
+}
+.sixth .sixth1 h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 80px;
+}
+.sixth .sixth1 h2 {
+  font-size: 50px;
+  font-family: "Times New Roman", Times, serif;
+}
+.sixth .sixth1 h3 {
+  font-size: 30px;
+}
+
+.fifth1 {
+  display: flex;
+  background-color: #f4f3f0;
+}
+.fifth1 img {
+  height: 502px;
+  min-width: 600px;
+  padding: 20px;
+}
+.fifth1 .right {
+  padding-top: 50px;
+  padding-left: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+.fifth1 .right h1 {
+  font-size: 40px;
+}
+.fifth1 .right h1 span {
+  font-weight: 700;
+}
+.fifth1 .right p {
+  margin-top: 50px;
+  line-height: 25px;
+}
+.fifth1 .Lfifth {
+  display: flex;
+  gap: 70px;
+  line-height: 25px;
+}
+.fifth1 .Lfifth span {
+  font-weight: 800;
+}
+.fifth1 .Lfifth ul {
+  list-style: none;
+}
+
+.slfoot {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(245, 204, 47);
+}
+.slfoot img {
+  height: 500px;
+  padding: 15px;
+}
+.slfoot .lside {
+  display: flex;
+  flex-direction: column;
+  gap: 180px;
+}
+.slfoot .lside h1 {
+  font-size: 40px;
+  padding-top: 50px;
+  padding-left: 30px;
+}
+.slfoot .lside .look {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding-left: 30px;
+}
+.slfoot .lside h2 {
+  font-size: 40px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+.slfoot .lside a {
+  color: black;
+}
+
+#ft {
+  background-color: #F4EBD0;
+  animation: foot 3s ease-in 0s linear;
+}
+#ft .end {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 100px;
+  height: 100vh;
+}
+.footer .leftside {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.footer .leftside label {
+  position: relative;
+  bottom: 20px;
+}
+.footer .leftside h1 {
+  font-size: 70px;
+  color: #000000;
+}
+.footer .leftside h3 {
+  font-size: 40px;
+}
+.footer .leftside p {
+  position: relative;
+  bottom: 40px;
+}
+.footer .leftside #check {
+  margin-top: 10px;
+}
+.footer .leftside a {
+  text-decoration: none;
+  margin-left: 200px;
+  border: 1px solid black;
+  padding: 8px 50px;
+  position: relative;
+  top: 20px;
+}
+.footer .email {
+  padding-bottom: 30px;
+}
+.footer .rightside {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.footer ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.footer .firstlist {
+  display: flex;
+  gap: 100px;
+}
+.footer .firstlist li {
+  list-style: none;
+}
+.footer .secondlist {
+  display: flex;
+  gap: 100px;
+}
+.footer .secondlist li {
+  list-style: none;
+}
+
+.end {
+  height: 10vh;
+  margin-top: 30px;
+}/*# sourceMappingURL=style.css.map */

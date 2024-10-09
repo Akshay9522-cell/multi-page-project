@@ -1,0 +1,372 @@
+ @mixin flexprop(){
+         display: flex;
+        flex-direction: column;
+ }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header  nav{
+   
+ 
+  width: 100%;
+   display: flex;
+   justify-content: space-around;
+   padding: 30px;
+ 
+     
+   ul{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+   }
+   li{
+    list-style: none;
+   }
+   a{
+    text-decoration: none;
+    color: black;
+   }
+
+}
+
+.second {
+    display: flex;
+    justify-content: baseline;
+   width: 100%;
+  height: 500px;
+  background: url(/photo-collage.png.png)no-repeat center center/cover;
+ 
+     .headimg{
+        color: white;
+        margin-left: 30px;
+        display: flex;
+        flex-direction: column;
+        font-size: 50px;
+        margin-top: 200px;
+      
+     }
+     a{
+        color: white;
+        margin-left: 40px;
+     }
+}
+
+.third{
+    height: 98vh;
+    display: flex;
+   
+   
+
+    .card{
+         
+        display: flex;
+       margin-left: 300px;
+          gap: 50px ;
+
+
+        
+
+        .card1{
+               
+                 
+                  margin-top: 35px;
+                    &:hover{
+                    transform: scale(1.1,1.1);  
+                   
+                    }
+                    
+                   
+                    img{
+                      height: 320px;
+
+                     
+                    }
+                  h4{
+                    margin-top: 5px;
+                    margin-left: 20px;
+                  }  
+        }
+        .card2{
+            margin-top: 35px;
+            
+    
+                &:hover{
+                    transform: scale(1.1,1.1);  
+                   
+                    }
+                      img{
+                      height: 320px;
+                    }
+                     h4{
+                    margin-top: 0px;
+                    margin-left: 20px;
+
+                  }  
+        }
+    }
+
+    h1{
+       position: relative;
+       left: 40px;
+       top: 40px;
+       
+       font-size: 30px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-weight: 300;
+    }
+    a{
+         position: relative;
+       left: 40px;
+       top: 50px;
+       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+       
+    }
+}
+
+  .fourth{
+    background-color: #F4EBD0;
+
+    .fourth1{
+      display: flex;
+       
+      img{
+        height: 700px;
+        width: 700px;
+      
+      
+      }
+      .left4{
+          position:sticky;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-left: 80px;
+        gap: 50px;
+      }
+      h1{
+        font-size: 60px;
+      }
+      p{
+        font-size: 30px;
+      }
+      a{
+        font-size: 20px;
+      }
+    }
+  }
+
+   .sixth{
+    height: 90vh;
+    background: url(/glasses\ image\ -\ juno\ collection.webp)no-repeat center center/cover;
+
+      .sixth1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: aliceblue;
+        gap: 20px;
+        padding-top: 130px;
+
+        h1{
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 80px;
+        }
+        h2{
+          font-size: 50px;
+          font-family: 'Times New Roman', Times, serif;
+        }
+        h3{
+          font-size: 30px;
+        }
+
+      }
+   }
+
+   .fifth1{
+    display: flex;
+    background-color: #f4f3f0;
+
+    img{
+      height: 502px;
+      min-width: 600px;
+      padding: 20px;
+    }
+
+    .right{
+      padding-top: 50px;
+      padding-left: 40px;
+      display: flex;
+      flex-direction: column;
+      gap: 100px;
+
+      h1{
+        font-size: 40px;
+        span{
+          font-weight: 700;
+        }
+      }
+
+      p{
+        margin-top: 50px;
+        line-height: 25px;
+      }
+    }
+
+    .Lfifth{
+      display: flex;
+      gap: 70px;
+      line-height: 25px;
+      span{
+        font-weight: 800;
+      }
+      ul{
+        list-style: none;
+      }
+    }
+   }
+
+
+
+  
+.slfoot{
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(245,204,47,1);
+  
+  img{
+    height: 500px;
+    padding: 15px;
+  }
+
+  .lside{
+      display: flex;
+      flex-direction: column;
+      gap: 180px;
+
+      h1{
+        font-size: 40px;
+        padding-top: 50px;
+        padding-left: 30px;
+      }
+
+      .look{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        padding-left:30px ;
+      }
+      h2{
+        font-size:40px ;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      }
+      a{
+        color: black;
+      }
+  }
+ 
+}
+
+
+
+
+
+#ft{  
+       background-color: #F4EBD0; 
+       animation: foot 3s ease-in 0s linear;
+      
+      .end{
+        display: flex;
+        justify-content: space-between;
+      }
+     
+  
+}
+
+.footer{
+      display: flex;
+      justify-content: space-around;
+      padding-top: 100px;
+      height: 100vh;
+    
+
+      .leftside{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+
+        label{
+          position: relative;
+          bottom: 20px;
+        }
+
+        h1{
+          font-size: 70px;
+          color: #000000;
+        }
+        h3{
+          font-size: 40px;
+        }
+        p{
+          position: relative;
+          bottom: 40px;
+        }
+
+        #check{
+          margin-top: 10px;
+        }
+
+        a{
+          text-decoration: none;
+          margin-left: 200px;
+          border: 1px solid black;
+          padding:8px 50px;
+          position: relative;
+          top: 20px;
+        }
+  }
+    .email{
+          padding-bottom: 30px;
+        }
+
+
+      .rightside{
+         @include flexprop();
+        gap: 50px;
+      }
+      ul{
+         @include flexprop();
+        gap: 10px;
+      }
+
+      .firstlist{
+        display: flex;
+        gap: 100px ;
+
+        li{
+          list-style: none;
+        }
+      }
+      .secondlist{
+         display: flex;
+        gap: 100px ;
+
+         li{
+          list-style: none;
+        }
+      }
+}
+.end{
+  height: 10vh;
+  margin-top: 30px;
+}
