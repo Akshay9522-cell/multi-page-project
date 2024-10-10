@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 header nav {
   width: 100%;
   display: flex;
@@ -25,14 +29,14 @@ header nav a {
   color: black;
 }
 
-.second {
+.sec2 {
   display: flex;
   justify-content: baseline;
   width: 100%;
   height: 500px;
   background: url(/photo-collage.png.png) no-repeat center center/cover;
 }
-.second .headimg {
+.sec2 .headimg {
   color: white;
   margin-left: 30px;
   display: flex;
@@ -40,47 +44,47 @@ header nav a {
   font-size: 50px;
   margin-top: 200px;
 }
-.second a {
+.sec2 a {
   color: white;
   margin-left: 40px;
 }
 
-.third {
+.sec3 {
   height: 98vh;
   display: flex;
 }
-.third .card {
+.sec3 .card {
   display: flex;
   margin-left: 300px;
   gap: 50px;
 }
-.third .card .card1 {
+.sec3 .card .card1 {
   margin-top: 35px;
 }
-.third .card .card1:hover {
+.sec3 .card .card1:hover {
   transform: scale(1.1, 1.1);
 }
-.third .card .card1 img {
+.sec3 .card .card1 img {
   height: 320px;
 }
-.third .card .card1 h4 {
+.sec3 .card .card1 h4 {
   margin-top: 5px;
   margin-left: 20px;
 }
-.third .card .card2 {
+.sec3 .card .card2 {
   margin-top: 35px;
 }
-.third .card .card2:hover {
+.sec3 .card .card2:hover {
   transform: scale(1.1, 1.1);
 }
-.third .card .card2 img {
+.sec3 .card .card2 img {
   height: 320px;
 }
-.third .card .card2 h4 {
+.sec3 .card .card2 h4 {
   margin-top: 0px;
   margin-left: 20px;
 }
-.third h1 {
+.sec3 h1 {
   position: relative;
   left: 40px;
   top: 40px;
@@ -88,24 +92,24 @@ header nav a {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   font-weight: 300;
 }
-.third a {
+.sec3 a {
   position: relative;
   left: 40px;
   top: 50px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
-.fourth {
+.sec4 {
   background-color: #F4EBD0;
 }
-.fourth .fourth1 {
+.sec4 .fourth1 {
   display: flex;
 }
-.fourth .fourth1 img {
+.sec4 .fourth1 img {
   height: 700px;
   width: 700px;
 }
-.fourth .fourth1 .left4 {
+.sec4 .fourth1 .left4 {
   position: sticky;
   display: flex;
   flex-direction: column;
@@ -115,21 +119,21 @@ header nav a {
   margin-left: 80px;
   gap: 50px;
 }
-.fourth .fourth1 h1 {
+.sec4 .fourth1 h1 {
   font-size: 60px;
 }
-.fourth .fourth1 p {
+.sec4 .fourth1 p {
   font-size: 30px;
 }
-.fourth .fourth1 a {
+.sec4 .fourth1 a {
   font-size: 20px;
 }
 
-.sixth {
+.sec6 {
   height: 90vh;
   background: url(/glasses\ image\ -\ juno\ collection.webp) no-repeat center center/cover;
 }
-.sixth .sixth1 {
+.sec6 .sixth1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -139,15 +143,15 @@ header nav a {
   gap: 20px;
   padding-top: 130px;
 }
-.sixth .sixth1 h1 {
+.sec6 .sixth1 h1 {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 80px;
 }
-.sixth .sixth1 h2 {
+.sec6 .sixth1 h2 {
   font-size: 50px;
   font-family: "Times New Roman", Times, serif;
 }
-.sixth .sixth1 h3 {
+.sec6 .sixth1 h3 {
   font-size: 30px;
 }
 

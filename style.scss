@@ -8,6 +8,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+  overflow-x: hidden;
+}
 
 header  nav{
    
@@ -34,9 +37,11 @@ header  nav{
     color: black;
    }
 
-}
+  }
 
-.second {
+
+
+.sec2 {
     display: flex;
     justify-content: baseline;
    width: 100%;
@@ -58,7 +63,7 @@ header  nav{
      }
 }
 
-.third{
+.sec3{
     height: 98vh;
     display: flex;
    
@@ -130,7 +135,7 @@ header  nav{
     }
 }
 
-  .fourth{
+  .sec4{
     background-color: #F4EBD0;
 
     .fourth1{
@@ -164,7 +169,7 @@ header  nav{
     }
   }
 
-   .sixth{
+   .sec6{
     height: 90vh;
     background: url(/glasses\ image\ -\ juno\ collection.webp)no-repeat center center/cover;
 
