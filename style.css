@@ -66,6 +66,8 @@ header nav a {
 }
 .sec3 .card .card1 img {
   height: 320px;
+  width: 500px;
+  margin-top: 80px;
 }
 .sec3 .card .card1 h4 {
   margin-top: 5px;
@@ -79,6 +81,8 @@ header nav a {
 }
 .sec3 .card .card2 img {
   height: 320px;
+  width: 500px;
+  margin-top: 80px;
 }
 .sec3 .card .card2 h4 {
   margin-top: 0px;
@@ -297,10 +301,93 @@ header nav a {
   gap: 100px;
 }
 .footer .secondlist li {
-  list-style: none;
+  list-style: square;
 }
 
 .end {
   height: 10vh;
   margin-top: 30px;
+}
+
+.newarrival {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 150px;
+}
+.newarrival .card {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  left: 100px;
+  top: 100px;
+  display: flex;
+  gap: 30px;
+}
+.newarrival .card img {
+  height: 400px;
+  width: 600px;
+}
+.newarrival .leftarrival {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  margin-left: 20px;
+}
+.newarrival .leftarrival ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  gap: 30px;
+  border-top: 1px solid black;
+}
+.newarrival .price {
+  display: flex;
+  justify-content: space-between;
+}
+.newarrival .rightarrival h1 {
+  position: relative;
+  top: 80px;
+  left: 80px;
+}
+.newarrival .rightarrival .cart {
+  text-decoration: none;
+  border: 1px solid black;
+  padding: 4px;
+  position: relative;
+  top: 10px;
+}
+
+.cart {
+  display: flex;
+  justify-content: space-around;
+  gap: 200px;
+}
+.cart .rightcart {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  gap: 40px;
+}
+.cart .rightcart h1 {
+  font-size: 50px;
+}
+.cart .rightcart h2 {
+  font-size: 30px;
+}
+.cart .rightcart h4 {
+  font-size: 35px;
+}
+.cart .rightcart p {
+  font-size: 20px;
+}
+.cart img {
+  height: 600px;
+  margin-top: 50px;
+  margin-left: 80px;
+}
+.cart h6 {
+  font-size: 30px;
+  margin-left: 80px;
+  margin-bottom: 40px;
+  text-shadow: #000000;
 }/*# sourceMappingURL=style.css.map */

@@ -90,6 +90,8 @@ header  nav{
                    
                     img{
                       height: 320px;
+                      width: 500px;
+                      margin-top: 80px;
 
                      
                     }
@@ -108,6 +110,8 @@ header  nav{
                     }
                       img{
                       height: 320px;
+                         width: 500px;
+                          margin-top: 80px; 
                     }
                      h4{
                     margin-top: 0px;
@@ -367,7 +371,7 @@ header  nav{
         gap: 100px ;
 
          li{
-          list-style: none;
+          list-style: square;
         }
       }
 }
@@ -375,3 +379,101 @@ header  nav{
   height: 10vh;
   margin-top: 30px;
 }
+
+// new arriavlas
+
+.newarrival{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 150px;
+
+  .card{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    left: 100px;
+    top: 100px;
+    display: flex;
+    gap: 30px;
+    img{
+      height: 400px;
+    width: 600px;
+    }
+  }
+
+  .leftarrival{
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    margin-left: 20px;
+
+    
+
+    ul{
+      display: flex;
+      flex-direction: column;
+      list-style: none;
+      gap: 30px;
+      border-top:1px solid black
+    }
+  }
+
+  .price{
+    display:flex;
+    justify-content:space-between ;
+  }
+  .rightarrival{
+    h1{
+      position: relative ;
+      top: 80px;
+      left: 80px;
+    }
+     .cart{
+      text-decoration: none;
+      border: 1px solid black;
+      padding: 4px;
+      position: relative;
+      top: 10px;
+      
+     }
+  }
+  
+}
+
+ .cart{
+  display: flex;
+  justify-content: space-around;
+  gap: 200px;
+
+  .rightcart{
+    display: flex;
+    flex-direction:column ;
+    margin-top: 40px;
+    gap: 40px;
+
+    h1{
+      font-size: 50px;
+    }
+    h2{
+      font-size: 30px;
+    }
+    h4{
+      font-size: 35px;
+    }
+    p{
+      font-size: 20px;
+    }
+  }
+  img{
+    height: 600px;
+    margin-top: 50px;
+    margin-left: 80px;
+   
+  }
+   h6{
+      font-size: 30px;
+      margin-left: 80px;
+      margin-bottom: 40px;
+      text-shadow: #000000;
+    }
+ }
