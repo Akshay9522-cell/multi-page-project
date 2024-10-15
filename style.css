@@ -14,6 +14,13 @@ header nav {
   justify-content: space-around;
   padding: 30px;
 }
+header nav h4 {
+  font-size: 20px;
+}
+header nav h1 {
+  font-size: 40px;
+  font-weight: 900;
+}
 header nav ul {
   display: flex;
   gap: 30px;
@@ -27,6 +34,7 @@ header nav li {
 header nav a {
   text-decoration: none;
   color: black;
+  font-size: 20px;
 }
 
 .sec2 {
@@ -199,11 +207,11 @@ header nav a {
 
 .slfoot {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   background-color: rgb(245, 204, 47);
 }
 .slfoot img {
-  height: 500px;
+  height: 100vh;
   padding: 15px;
 }
 .slfoot .lside {
@@ -390,4 +398,206 @@ header nav a {
   margin-left: 80px;
   margin-bottom: 40px;
   text-shadow: #000000;
+}
+
+.giftcard {
+  display: flex;
+  justify-content: space-around;
+  background-color: #f4f3ef;
+}
+.giftcard h1 {
+  font-size: 50px;
+}
+.giftcard h2 {
+  font-size: 30px;
+  opacity: 0.7;
+}
+.giftcard p {
+  font-size: 20px;
+  opacity: 0.7;
+}
+.giftcard img {
+  height: 400px;
+  width: 600px;
+  margin-top: 70px;
+  margin-right: 70px;
+}
+
+.giftright {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.giftright .quan {
+  display: flex;
+  width: 20%;
+  font-size: 30px;
+  justify-content: space-evenly;
+  border: 1px solid black;
+}
+.giftright .blog {
+  display: flex;
+  justify-content: space-evenly;
+}
+.giftright .blog .btn1 {
+  font-size: 20px;
+  border: 1px solid black;
+  padding: 15px;
+  margin-right: 120px;
+}
+.giftright .Form {
+  display: flex;
+  flex-direction: column;
+}
+.giftright .Form label {
+  font-size: 20px;
+  opacity: 0.7;
+}
+.giftright .Form input {
+  padding: 10px;
+}
+.giftright .Form .buybtn {
+  padding: 10px;
+  font-size: 30px;
+  background-color: #312A27;
+  color: white;
+}
+
+.gcard {
+  display: flex;
+}
+.gcard span {
+  position: relative;
+  top: 10px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.gcard1 {
+  height: 50px;
+  width: 60px;
+  border: 1px solid black;
+}
+
+.login {
+  background: url(/images/bg.png) no-repeat center center/cover;
+  height: 100vh;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 30px;
+}
+.login h1 {
+  font-size: 40px;
+}
+.login label {
+  font-size: 30px;
+}
+.login input {
+  font-size: 30px;
+}
+.login input:hover {
+  color: white;
+  background-color: aqua;
+}
+.login #dog {
+  border-radius: 30px;
+  padding: 10px;
+}
+.login #dog:hover {
+  color: white;
+  background-color: aqua;
+}
+
+.cart {
+  background-color: #f1f0ee;
+  padding-top: 50px;
+  padding-bottom: 60px;
+  gap: 30px;
+}
+.cart h4 {
+  font-size: 30px;
+}
+.cart .cartleft {
+  display: flex;
+  border: 1px solid black;
+  box-shadow: 10px 20px 20px #9d9681;
+}
+.cart .cartleft img {
+  width: 150px;
+  height: 150px;
+  position: relative;
+  top: 100px;
+  right: 40px;
+}
+
+.cartleftone {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 20px;
+}
+.cartleftone h3 {
+  border-bottom: 2px solid black;
+}
+
+.cartlefttwo {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  padding: 20px;
+  position: relative;
+  top: 0px;
+}
+.cartlefttwo h3 {
+  font-size: 30px;
+}
+
+.cartright {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  box-shadow: 10px 20px 20px #8b805c;
+  gap: 15px;
+  height: 300px;
+  padding: 20px;
+}
+.cartright .cartright1 {
+  display: flex;
+  padding: 20px;
+  gap: 40px;
+}
+.cartright .cartright1 .right1 {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+.cartright .cartright1 .right1 h1 {
+  border-bottom: 2px solid black;
+}
+.cartright .cartright1 .right2 {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding-top: 10px;
+}
+.cartright .btm {
+  display: flex;
+  gap: 15px;
+  margin-top: 50px;
+  border: 1px solid black;
+  padding: 20px;
+}
+
+.checkout {
+  padding: 10px;
+  border-radius: 30px;
+  font-size: 20px;
+  background-color: #11DAAC;
 }/*# sourceMappingURL=style.css.map */
