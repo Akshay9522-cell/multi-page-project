@@ -9,7 +9,7 @@ body {
 }
 
 header nav {
-  width: 100%;
+  max-width: 100%;
   display: flex;
   justify-content: space-around;
   padding: 30px;
@@ -37,10 +37,17 @@ header nav a {
   font-size: 20px;
 }
 
+.rightarrival .card {
+  margin-right: 150px;
+}
+.rightarrival .card img {
+  mix-blend-mode: darken;
+}
+
 .sec2 {
-  display: flex;
+  display: grid;
   justify-content: baseline;
-  width: 100%;
+  max-width: 100%;
   height: 500px;
   background: url(/photo-collage.png.png) no-repeat center center/cover;
 }
@@ -74,7 +81,7 @@ header nav a {
 }
 .sec3 .card .card1 img {
   height: 320px;
-  width: 500px;
+  max-width: 500px;
   margin-top: 80px;
 }
 .sec3 .card .card1 h4 {
@@ -89,7 +96,7 @@ header nav a {
 }
 .sec3 .card .card2 img {
   height: 320px;
-  width: 500px;
+  max-width: 500px;
   margin-top: 80px;
 }
 .sec3 .card .card2 h4 {
@@ -119,7 +126,7 @@ header nav a {
 }
 .sec4 .fourth1 img {
   height: 700px;
-  width: 700px;
+  max-width: 700px;
 }
 .sec4 .fourth1 .left4 {
   position: sticky;
@@ -169,6 +176,7 @@ header nav a {
 
 .fifth1 {
   display: flex;
+  justify-content: space-between;
   background-color: #f4f3f0;
 }
 .fifth1 img {
@@ -178,7 +186,7 @@ header nav a {
 }
 .fifth1 .right {
   padding-top: 50px;
-  padding-left: 40px;
+  padding-left: 30px;
   display: flex;
   flex-direction: column;
   gap: 100px;
@@ -192,6 +200,7 @@ header nav a {
 .fifth1 .right p {
   margin-top: 50px;
   line-height: 25px;
+  font-size: 20px;
 }
 .fifth1 .Lfifth {
   display: flex;
@@ -203,6 +212,7 @@ header nav a {
 }
 .fifth1 .Lfifth ul {
   list-style: none;
+  font-size: 20px;
 }
 
 .slfoot {
@@ -236,6 +246,16 @@ header nav a {
 }
 .slfoot .lside a {
   color: black;
+}
+
+.suncard {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+#sun {
+  margin-bottom: 100px;
 }
 
 #ft {
@@ -333,7 +353,7 @@ header nav a {
 }
 .newarrival .card img {
   height: 400px;
-  width: 600px;
+  max-width: 600px;
 }
 .newarrival .leftarrival {
   display: flex;
@@ -352,10 +372,14 @@ header nav a {
   display: flex;
   justify-content: space-between;
 }
+.newarrival .rightarrival {
+  display: flex;
+  gap: 50px;
+}
 .newarrival .rightarrival h1 {
   position: relative;
   top: 80px;
-  left: 80px;
+  left: 10px;
 }
 .newarrival .rightarrival .cart {
   text-decoration: none;
@@ -368,7 +392,6 @@ header nav a {
 .cart {
   display: flex;
   justify-content: space-around;
-  gap: 200px;
 }
 .cart .rightcart {
   display: flex;
@@ -418,7 +441,7 @@ header nav a {
 }
 .giftcard img {
   height: 400px;
-  width: 600px;
+  max-width: 600px;
   margin-top: 70px;
   margin-right: 70px;
 }
@@ -431,7 +454,7 @@ header nav a {
 }
 .giftright .quan {
   display: flex;
-  width: 20%;
+  max-width: 20%;
   font-size: 30px;
   justify-content: space-evenly;
   border: 1px solid black;
@@ -476,7 +499,7 @@ header nav a {
 
 .gcard1 {
   height: 50px;
-  width: 60px;
+  max-width: 60px;
   border: 1px solid black;
 }
 
@@ -528,7 +551,7 @@ header nav a {
   box-shadow: 10px 20px 20px #9d9681;
 }
 .cart .cartleft img {
-  width: 150px;
+  max-width: 150px;
   height: 150px;
   position: relative;
   top: 100px;
@@ -600,4 +623,98 @@ header nav a {
   border-radius: 30px;
   font-size: 20px;
   background-color: #11DAAC;
+}
+
+#bar {
+  color: black;
+}
+
+#click {
+  display: none;
+}
+
+#bar {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  #bar {
+    display: block;
+  }
+  .cart img {
+    max-width: 500px;
+    height: 400px;
+    align-items: center;
+  }
+  .cart .rightcart {
+    text-align: center;
+  }
+  #allproducts nav ul a {
+    display: none;
+  }
+  #allproducts nav a {
+    display: none;
+  }
+  .footer {
+    height: 200vh;
+    flex-direction: column;
+    position: relative;
+  }
+  .slfoot {
+    flex-direction: column;
+    max-width: 93%;
+  }
+  .fifth1 {
+    flex-direction: column;
+  }
+  .sec4 .fourth1 {
+    display: flex;
+    flex-direction: column;
+  }
+  .sec3 .card {
+    display: flex;
+    flex-direction: column;
+  }
+  .giftcard {
+    flex-direction: column;
+    padding-left: 50px;
+  }
+  .cart {
+    flex-direction: column;
+    padding-bottom: 100px;
+  }
+}
+@media screen and (max-width: 426px) {
+  #bar {
+    display: block;
+  }
+  .cart img {
+    max-width: 200px;
+    height: 200px;
+    align-items: center;
+  }
+  .cart .rightcart {
+    text-align: center;
+  }
+  #allproducts nav ul a {
+    display: none;
+  }
+  .footer {
+    flex-direction: column;
+  }
+  .cart {
+    flex-direction: column;
+    padding-bottom: 200px;
+  }
+  .cartleft {
+    flex-direction: column;
+  }
+  .giftcard img {
+    max-width: 300px;
+    height: 200px;
+    padding-right: 50px;
+  }
+  .giftcard .blog {
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=style.css.map */
