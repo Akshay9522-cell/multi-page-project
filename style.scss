@@ -923,6 +923,15 @@ label{
   width: 42%;
   
  }
+ .sec2 .img1 .headimg{
+  font-size: 40px;
+ }
+ .sec3 .card .card1 img{
+  width: 100%;
+ }
+  .sec3 .card .card2 img{
+  width: 85%;
+ }
 #allproducts nav ul{
   position: relative;
   left: 40px;
@@ -976,6 +985,9 @@ label{
    .sec4 .fourth1 h1{
     font-size: 47px;
    }
+   .sec4 .fourth1 img{
+    height: 488px;
+   }
    .fifth1 img{
     width: 100%;
    }
@@ -984,15 +996,27 @@ label{
     font-size: 50px;
    }
    .footer .firstlist{
+    position: relative;
+    right: 100px;
     gap:28px;
     padding-top: 39px;
      }
    .footer .secondlist{
+    position: relative;
+    right: 100px;
     gap: 28px;
+   }
+   .footer .leftside{
+    position: relative;
+    right: 100px;
    }
    .footer .leftside a{
     position:relative;
     right: 200px;
     top: 8px;
    }
+   .slfoot img{
+    width: 350px;
+   }
+   
   }
