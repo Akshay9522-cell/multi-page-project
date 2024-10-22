@@ -8,14 +8,18 @@ body {
   overflow-x: hidden;
 }
 
+header nav a {
+  margin-top: 1px;
+}
+
 header nav {
-  max-width: 100%;
+  position: fixed;
+  z-index: 99999;
+  width: 100%;
   display: flex;
   justify-content: space-around;
   padding: 30px;
-}
-header nav h4 {
-  font-size: 20px;
+  color: rgb(173, 144, 105);
 }
 header nav h1 {
   font-size: 40px;
@@ -33,8 +37,14 @@ header nav li {
 }
 header nav a {
   text-decoration: none;
-  color: black;
+  color: rgb(173, 47, 62);
   font-size: 20px;
+}
+header nav a:hover {
+  color: bisque;
+  border: 2px solid rgb(176, 164, 142);
+  border-radius: 20px;
+  padding: 10px;
 }
 
 .rightarrival .card {
@@ -44,11 +54,16 @@ header nav a {
   mix-blend-mode: darken;
 }
 
+.card1 a:hover {
+  background-color: #ac9e5c;
+  color: rgb(173, 144, 105);
+}
+
 .sec2 {
   display: grid;
   justify-content: baseline;
   max-width: 100%;
-  height: 500px;
+  height: 100vh;
   background: url(/photo-collage.png.png) no-repeat center center/cover;
 }
 .sec2 .headimg {
@@ -64,45 +79,6 @@ header nav a {
   margin-left: 40px;
 }
 
-.sec3 {
-  height: 98vh;
-  display: flex;
-}
-.sec3 .card {
-  display: flex;
-  margin-left: 300px;
-  gap: 50px;
-}
-.sec3 .card .card1 {
-  margin-top: 35px;
-}
-.sec3 .card .card1:hover {
-  transform: scale(1.1, 1.1);
-}
-.sec3 .card .card1 img {
-  height: 320px;
-  max-width: 500px;
-  margin-top: 80px;
-}
-.sec3 .card .card1 h4 {
-  margin-top: 5px;
-  margin-left: 20px;
-}
-.sec3 .card .card2 {
-  margin-top: 35px;
-}
-.sec3 .card .card2:hover {
-  transform: scale(1.1, 1.1);
-}
-.sec3 .card .card2 img {
-  height: 320px;
-  max-width: 500px;
-  margin-top: 80px;
-}
-.sec3 .card .card2 h4 {
-  margin-top: 0px;
-  margin-left: 20px;
-}
 .sec3 h1 {
   position: relative;
   left: 40px;
@@ -117,6 +93,41 @@ header nav a {
   top: 50px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
+.sec3 .card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-left: 300px;
+  gap: 50px;
+}
+.sec3 .card .card1 {
+  margin-top: 35px;
+}
+.sec3 .card .card1:hover {
+  transform: scale(1.1, 1.1);
+}
+.sec3 .card .card1 img {
+  height: 300px;
+  max-width: 500px;
+}
+.sec3 .card .card1 h4 {
+  margin-top: 5px;
+  margin-left: 20px;
+}
+.sec3 .card .card2 {
+  margin-top: 35px;
+}
+.sec3 .card .card2:hover {
+  transform: scale(1.1);
+}
+.sec3 .card .card2 img {
+  height: 320px;
+  max-width: 500px;
+  margin-top: 80px;
+}
+.sec3 .card .card2 h4 {
+  margin-top: 0px;
+  margin-left: 20px;
+}
 
 .sec4 {
   background-color: #F4EBD0;
@@ -126,7 +137,6 @@ header nav a {
 }
 .sec4 .fourth1 img {
   height: 700px;
-  max-width: 700px;
 }
 .sec4 .fourth1 .left4 {
   position: sticky;
@@ -135,7 +145,6 @@ header nav a {
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin-left: 80px;
   gap: 50px;
 }
 .sec4 .fourth1 h1 {
@@ -149,7 +158,7 @@ header nav a {
 }
 
 .sec6 {
-  height: 90vh;
+  height: 100vh;
   background: url(/glasses\ image\ -\ juno\ collection.webp) no-repeat center center/cover;
 }
 .sec6 .sixth1 {
@@ -181,24 +190,21 @@ header nav a {
 }
 .fifth1 img {
   height: 502px;
-  min-width: 600px;
-  padding: 20px;
+  padding: 0px;
 }
 .fifth1 .right {
-  padding-top: 50px;
-  padding-left: 30px;
   display: flex;
   flex-direction: column;
   gap: 100px;
 }
 .fifth1 .right h1 {
   font-size: 40px;
+  margin-top: 30px;
 }
 .fifth1 .right h1 span {
   font-weight: 700;
 }
 .fifth1 .right p {
-  margin-top: 50px;
   line-height: 25px;
   font-size: 20px;
 }
@@ -251,7 +257,12 @@ header nav a {
 .suncard {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 30px;
+}
+
+.suncard .card1 a {
+  font-weight: 700;
+  background-color: #11DAAC;
 }
 
 #sun {
@@ -391,7 +402,7 @@ header nav a {
 
 .cart {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .cart .rightcart {
   display: flex;
@@ -412,7 +423,8 @@ header nav a {
   font-size: 20px;
 }
 .cart img {
-  height: 600px;
+  height: 10%;
+  width: 10%;
   margin-top: 50px;
   margin-left: 80px;
 }
@@ -551,17 +563,16 @@ header nav a {
   box-shadow: 10px 20px 20px #9d9681;
 }
 .cart .cartleft img {
-  max-width: 150px;
-  height: 150px;
+  width: 200PX;
+  height: 100PX;
   position: relative;
-  top: 100px;
   right: 40px;
 }
 
 .cartleftone {
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 30px;
   padding: 20px;
 }
 .cartleftone h3 {
@@ -571,10 +582,9 @@ header nav a {
 .cartlefttwo {
   display: flex;
   flex-direction: column;
-  gap: 80px;
+  gap: 40px;
   padding: 20px;
   position: relative;
-  top: 0px;
 }
 .cartlefttwo h3 {
   font-size: 30px;
@@ -613,7 +623,6 @@ header nav a {
 .cartright .btm {
   display: flex;
   gap: 15px;
-  margin-top: 50px;
   border: 1px solid black;
   padding: 20px;
 }
@@ -625,20 +634,69 @@ header nav a {
   background-color: #11DAAC;
 }
 
-#bar {
+#check {
   color: black;
 }
 
-#click {
+#check {
   display: none;
 }
 
-#bar {
+label {
   display: none;
 }
 
-@media screen and (max-width: 768px) {
-  #bar {
+@media screen and (max-width: 786px) {
+  #allproducts input {
+    display: none;
+  }
+  .fifth1 {
+    justify-content: center;
+    align-items: center;
+  }
+  .fourth1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  label {
+    color: #6e4c20;
+    font-size: 30px;
+    display: block;
+  }
+  header nav {
+    width: 50%;
+    border: 2px solid #AD9069;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 30px;
+  }
+  header nav ul {
+    flex-direction: column;
+    position: relative;
+    left: 283px;
+    background-color: #AD9069;
+    gap: 5px;
+    border-radius: 20px;
+  }
+  header nav ul li a {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    display: none;
+  }
+  #check:checked ~ nav ul li a {
+    display: block;
+    z-index: 1999;
+    color: #faf7f7;
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 6px;
+  }
+  #check:checked ~ nav {
+    border: none;
+  }
+  #check {
     display: block;
   }
   .cart img {
@@ -662,7 +720,16 @@ header nav a {
   }
   .slfoot {
     flex-direction: column;
-    max-width: 93%;
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .slfoot img {
+    height: 300px;
+    width: 400px;
+  }
+  .slfoot .lside {
+    gap: 36px;
   }
   .fifth1 {
     flex-direction: column;
@@ -672,8 +739,8 @@ header nav a {
     flex-direction: column;
   }
   .sec3 .card {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
   }
   .giftcard {
     flex-direction: column;
@@ -683,8 +750,26 @@ header nav a {
     flex-direction: column;
     padding-bottom: 100px;
   }
+  .footer {
+    margin-left: 200px;
+  }
+  .footer .submit {
+    position: absolute;
+    left: 100px;
+    top: -50px;
+  }
+  .card .card1 {
+    max-width: 300px;
+  }
 }
 @media screen and (max-width: 426px) {
+  header nav {
+    width: 42%;
+  }
+  #allproducts nav ul {
+    position: relative;
+    left: 40px;
+  }
   #bar {
     display: block;
   }
@@ -716,5 +801,33 @@ header nav a {
   }
   .giftcard .blog {
     flex-direction: column;
+  }
+  .sec3 {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .sec3 .card {
+    margin-left: -10px;
+  }
+  .sec4 .fourth1 h1 {
+    font-size: 47px;
+  }
+  .fifth1 img {
+    width: 100%;
+  }
+  .sec6 .sixth1 h1 {
+    font-size: 50px;
+  }
+  .footer .firstlist {
+    gap: 28px;
+    padding-top: 39px;
+  }
+  .footer .secondlist {
+    gap: 28px;
+  }
+  .footer .leftside a {
+    position: relative;
+    right: 200px;
+    top: 8px;
   }
 }/*# sourceMappingURL=style.css.map */
