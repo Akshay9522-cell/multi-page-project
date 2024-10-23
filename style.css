@@ -516,7 +516,7 @@ header nav a:hover {
 }
 
 .login {
-  background: url(/images/bg.png) no-repeat center center/cover;
+  background: url(/images/pexels-arshamhaghani-3387577.jpg) no-repeat center center/cover;
   height: 100vh;
   background-color: white;
   display: flex;
@@ -525,6 +525,9 @@ header nav a:hover {
   align-items: center;
   text-align: center;
   gap: 30px;
+  input{
+    background-color: rgb(235, 39, 39);
+  }
 }
 .login h1 {
   font-size: 40px;
@@ -765,9 +768,6 @@ label {
 @media screen and (max-width: 426px) {
   header nav {
     width: 42%;
-  }
-  #ft{
-    padding-bottom: 368px;
   }
   .sec2 .img1 .headimg {
     font-size: 40px;
